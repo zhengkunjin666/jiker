@@ -1,0 +1,575 @@
+/* 页面 */
+body{
+    width: 1440px;
+    height: 2403px;
+    background: #F8FAFC;
+}
+/* 头部样式 */
+.page-header{
+    width: 1440px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.page-header img{
+    width: 56px;
+    height: 39px;
+    margin: 10px 1204px 11px 180px;
+}
+nav{
+    width: 340px;
+    height: 15px;
+    position: absolute;
+    top: 21px;
+    right: 831px;
+    bottom: 24px;
+    left: 269px;
+}
+nav a{
+    padding: 0;
+    margin: 0 35px 0 0;
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 15px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+}
+nav a:first-child{
+    color: #006EDA;
+    left: 0;
+}
+.horizontal{
+    width: 28px;
+    height: 3px;
+    background: #006EDA;
+    border-radius: 3px;
+    position: absolute;
+    top: 44px;
+    right: 1142px;
+    bottom: 13px;
+    left: 270px;
+}
+.avaar{
+    width: 34px;
+    height: 34px;
+    background: #F7F7F7;
+    border-radius: 17px;
+    position: absolute;
+    top: 13px;
+    right: 180px;
+    bottom: 13px;
+    left: 1226px;
+}
+.avaar img{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    margin: 0;
+}
+/* 主体样式 */
+/* 实战营 */
+.page-body-hd img{
+    width: 1080px;
+    height: 320px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px 180px 0px;
+}
+.combatcamp{
+    width: 60px;
+    height: 20px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 20px;
+    margin: 40px 690px 0px;
+}
+.combatcamp-header{
+    width: 154px;
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #666666;
+    line-height: 14px;
+    margin: 10px 644px 0px 642px;
+}
+.combatcamp-body{
+    width: 532px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    position: relative;
+    float: left;
+}
+.combatcamp-body.left-top{
+    margin: 20px 0px 0px 180px;
+}
+.combatcamp-body.right-top{
+    margin: 20px 180px 0px 16px;
+}
+.combatcamp-body.left-bottom{
+    margin: 16px 0px 0px 180px;
+}
+.combatcamp-body.right-bottom{
+    margin: 16px 180px 0px 16px;
+}
+.combatcamp-body-hd{
+    width: 240px;
+    height: 20px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 20px;
+    margin: 28px 0px 0px 30px;
+    position: absolute;
+}
+.combatcamp-body-bd{
+    width: 215px;
+    height: 40px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 20px;
+    margin: 60px 0px 13px 30px;
+    position: absolute;
+}
+.combatcamp-body-ft{
+    width: 139px;
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    margin: 113px 0px 25px 30px;
+    position: absolute;
+}
+.combatcamp-body-ft span{
+    color: #006EDA;
+}
+.combatcamp-body img{
+    width: 108px;
+    height: 125px;
+    display: inline-block;
+    float: left;
+    margin: 25px 49px 0px 379px;
+    position: absolute;
+}
+/* 课程 */
+.course{
+    width: 40px;
+    height: 20px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 20px;
+    margin: 376px 698px 0px 702px;
+    position: relative;
+}
+.course-header{
+    width: 154px;
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #666666;
+    line-height: 14px;
+    margin: 10px 641px 0px 645px;
+    position: absolute;
+}
+.course-body-border{
+    width: 1083px;
+    height: 512px;
+    margin: 44px 178px 0px 179px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-body{
+    width: 258px;
+    height: 240px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+}
+.course-body.left{
+    margin: 0px 3px 13px 0px;
+}
+.course-body.right{
+    width: 258px;
+    height: 240px;
+    margin: 0px 0px 13px 16px;
+    background-image: url(./img/index_course.png);
+    background-repeat: no-repeat;
+    background-size: 259px 238px;
+}
+.course-body-hd{
+    width: 258px;
+    height: 139px;
+    position: relative;
+}
+.course-body-hd .border{
+    width: 42px;
+    height: 20px;
+    background: linear-gradient(180deg, #E5C676 0%, #E6A23C 100%);
+    position: absolute;
+    margin: -3px 7px 123px 209px;
+    padding: 0;
+}
+.course-body-hd .border div{
+    width: 24px;
+    height: 16px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 16px;
+    position: absolute;
+    margin: 2px 9px;
+}
+.course-body-hd img{
+    width: 258px;
+    height: 139px;
+    margin: 0;
+    float: left;
+}
+.course-body-bd{
+    width: 226px;
+    height: 40px;
+    font-size: 15px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    margin: 12px 16px 0px;
+}
+.course-body-ft{
+    width: 258px;
+    height: 48px;
+    display: inline-block;
+}
+.course-body-ft .left{
+    width: 0px;
+    height: 0px;
+}
+.course-body-ft .left img{
+    width: 12px;
+    height: 12px;
+    background: #999999;
+    margin: 18px 0px 18px 16px;
+}
+.course-body-ft-right{
+    width: 211px;
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    margin: 19px 14px 17px 33px;
+}
+.course-body-ft-right .right{
+    width: 0px;
+    height: 0px;
+}
+.course-body-ft-right div{
+    float: left;
+}
+.course-body-ft-right div:last-child{
+    margin: 0px auto 0px 88px;
+}
+.course-body-ft-right img{
+    width: 12px;
+    height: 12px;
+    background: #999999;
+}
+.course-body-ft-right .middle img{
+    margin: -1px 0px 1px 15px;
+}
+.course-body-ft-right .right img{
+    margin: -1px 46px 1px 77px;
+}
+/* 项目挑战 */
+.projectchallenge{
+    width: 80px;
+    height: 20px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 20px;
+    margin: 580px 678px 0px 682px;
+    position: relative;
+}
+.projectchallenge-header{
+    width: 140px;
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #666666;
+    line-height: 14px;;
+    margin: 10px 648px 0px 652px;
+    position: absolute;
+}
+.projectchallenge-body-border{
+    width: 1080px;
+    height: 256px;
+    margin: 44px 178px 0px 182px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projectchallenge-body{
+    width: 203px;
+    height: 120px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    margin: 0px 16px 0px 0px;
+}
+.projectchallenge-body:nth-child(5){
+    margin: 0px 0px 0px 1px;
+}
+.projectchallenge-body:nth-child(8){
+    margin: 0px 0px 0px 1px;
+}
+.projectchallenge-body:nth-child(n+6){
+    margin: 16px 16px 0px 0px;
+}
+.projectchallenge-body:last-child{
+    margin: 16px 0px 0px 1px;
+}
+.projectchallenge-body-hd{
+    width: 203px;
+    height: 84px;
+    position: relative;
+}
+.projectchallenge-body-hd div{
+    width: 169px;
+    height: 40px;
+    font-size: 15px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    text-align: center;
+    margin: 22px 18px 22px 16px;
+    position: absolute;
+}
+.projectchallenge-body-ft{
+    width: 203px;
+    height: 36px;
+    background: #838CA1;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+}
+.projectchallenge-body-ft div{
+    width: 143px;
+    height: 13px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 13px;
+    margin: 12px 30px 11px;
+    position: absolute;
+}
+.projectchallenge-body-ft .hidden{
+    width: 52px;
+    height: 13px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 13px;
+    margin: 12px 75px 11px 76px;
+    position: absolute;
+    display: none;
+}
+.projectchallenge-body-ft:hover{
+    background: #006EDA;
+}
+.projectchallenge-body-ft:hover div{
+    display: none;
+}
+.projectchallenge-body-ft:hover .hidden{
+    display: block;
+}
+.projectchallenge-body:nth-child(2) .projectchallenge-body-ft{
+    background: #006EDA;
+}
+.projectchallenge-body:nth-child(2) .projectchallenge-body-ft div{
+    display: none;
+}
+.projectchallenge-body:nth-child(2) .projectchallenge-body-ft .hidden{
+    display: block;
+}
+/* 实验 */
+.test{
+    width: 40px;
+    height: 20px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 20px;
+    margin: 340px 698px 0px 702px;
+    position: relative;
+}
+.test-header{
+    width: 140px;
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #666666;
+    line-height: 14px;
+    margin: 10px 648px 0px 652px;
+    position: absolute;
+}
+.test-body-border{
+    width: 1080px;
+    height: 436px;
+    margin: 47px 178px 0px 182px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.test-body{
+    width: 203px;
+    height: 210px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    margin: 0px 16px 0px 0px;
+}
+.test-body:nth-child(5){
+    margin: 0px 0px 0px 1px;
+}
+.test-body:nth-child(8){
+    margin: 0px 0px 0px 1px;
+}
+.test-body:nth-child(n+6){
+    margin: 16px 16px 0px 0px;
+}
+.test-body:last-child{
+    margin: 16px 0px 0px 1px;
+}
+.test-body-hd{
+    width: 203px;
+    height: 110px;
+    position: relative;
+}
+.test-body-hd .border{
+    width: 42px;
+    height: 20px;
+    background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
+    position: absolute;
+    margin: -3px 10px 93px 151px;
+    padding: 0;
+}
+.test-body-hd .border div{
+    width: 24px;
+    height: 16px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 16px;
+    position: absolute;
+    margin: 2px 9px;
+}
+.test-body-hd img{
+    width: 203px;
+    height: 110px;
+    margin: 0;
+    float: left;
+}
+.test-body-bd{
+    width: 169px;
+    height: 40px;
+    font-size: 15px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    margin: 12px 18px 0px 16px;
+}
+.test-body-ft{
+    width: 203px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+}
+.test-body-ft .left{
+    width: 0px;
+    height: 0px;
+}
+.test-body-ft .left img{
+    width: 12px;
+    height: 12px;
+    background: #999999;
+    margin: 18px 0px 18px 16px;
+}
+.test-body-ft-right{
+    width: 163px;
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    margin: 19px 7px 17px 33px;
+    position: relative;
+}
+.test-body-ft-right div{
+    position: absolute;
+}
+.test-body-ft-right img{
+    width: 12px;
+    height: 12px;
+    background: #999999;
+}
+.test-body-ft-right .middle img{
+    margin: 0px 103px 0px 48px;
+}
+.test-body-ft-right .right img{
+    margin: -1px 35px 1px 116px;
+}
+.test-body-ft-right div:nth-child(3){
+    margin: 0px 0px 0px 60px;
+}
+.test-body-ft-right div:last-child{
+    margin: 0px 0px 0px 128px;
+}
+/* 脚部样式 */
+.page-footer{
+    width: 1440px;
+    height: 40px;
+    background: #333744;
+    margin: 523px 0px 0px;
+}
+.page-footer div{
+    width: 1440px;
+    height: 40px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+}
+
+
