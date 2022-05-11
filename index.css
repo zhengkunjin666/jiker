@@ -71,16 +71,26 @@ nav a:first-child{
     margin: 0;
 }
 /* 主体样式 */
-/* 实战营 */
+.page-body-hd{
+    width: 1080px;
+    height: 320px;
+    margin: 20px 180px 0px;
+}
 .page-body-hd img{
     width: 1080px;
     height: 320px;
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-    margin: 20px 180px 0px;
 }
-.camp{
+/* 实战营 */
+.camp-section{
+    width: 1080px;
+    height: 380px;
+    margin: 40px 180px 0px;
+    position: relative;
+}
+.camp-title{
     width: 60px;
     height: 20px;
     font-size: 20px;
@@ -88,9 +98,10 @@ nav a:first-child{
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 40px 690px 0px;
+    margin: 0px 510px 0px;
+    position: absolute;
 }
-.camp-header{
+.camp-description{
     width: 154px;
     height: 14px;
     font-size: 14px;
@@ -98,15 +109,16 @@ nav a:first-child{
     font-weight: 500;
     color: #666666;
     line-height: 14px;
-    margin: 10px 644px 0px 642px;
+    margin: 30px 464px 0px 462px;
+    position: absolute;
 }
-.camp-body-border{
+.camp-list{
     width: 1080px;
-    height: 316px;
-    margin: 20px 180px 0px;
+    height: 380px;
+    margin: 40px 0px 0px;
     position: relative;
 }
-.camp-body{
+.camp-item{
     width: 532px;
     height: 150px;
     background: #FFFFFF;
@@ -114,16 +126,19 @@ nav a:first-child{
     border-radius: 5px;
     position: absolute;
 }
-.camp-body:nth-child(2){
-    margin: 0 0px 16px 548px;
+.camp-item:nth-child(1){
+    margin: 64px 16px 16px 0px;
 }
-.camp-body:nth-child(3){
-    margin: 166px 16px 0px 0px;
+.camp-item:nth-child(2){
+    margin: 64px 0px 16px 548px;
 }
-.camp-body:last-child{
-    margin: 166px 0px 0px 548px;
+.camp-item:nth-child(3){
+    margin: 230px 16px 0px 0px;
 }
-.camp-body-hd{
+.camp-item:last-child{
+    margin: 230px 0px 0px 548px;
+}
+.camp-item-hd{
     width: 240px;
     height: 20px;
     font-size: 20px;
@@ -134,7 +149,7 @@ nav a:first-child{
     margin: 28px 0px 0px 30px;
     position: absolute;
 }
-.camp-body-bd{
+.camp-item-bd{
     width: 215px;
     height: 40px;
     font-size: 14px;
@@ -145,7 +160,7 @@ nav a:first-child{
     margin: 60px 0px 13px 30px;
     position: absolute;
 }
-.camp-body-ft{
+.camp-item-ft{
     width: 139px;
     height: 12px;
     font-size: 12px;
@@ -156,10 +171,10 @@ nav a:first-child{
     margin: 113px 0px 25px 30px;
     position: absolute;
 }
-.camp-body-ft span{
+.camp-item-ft span{
     color: #006EDA;
 }
-.camp-body img{
+.camp-item img{
     width: 108px;
     height: 125px;
     display: inline-block;
@@ -168,7 +183,13 @@ nav a:first-child{
     position: absolute;
 }
 /* 课程 */
-.course{
+.course-section{
+    width: 1083px;
+    height: 560px;
+    margin: 40px 178px 0px 179px;
+    position: relative;
+}
+.course-title{
     width: 40px;
     height: 20px;
     font-size: 20px;
@@ -176,10 +197,10 @@ nav a:first-child{
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 40px 698px 0px 702px;
+    margin: 40px 620px 0px 523px;
     position: relative;
 }
-.course-header{
+.course-description{
     width: 154px;
     height: 14px;
     font-size: 14px;
@@ -187,18 +208,18 @@ nav a:first-child{
     font-weight: 500;
     color: #666666;
     line-height: 14px;
-    margin: 10px 641px 0px 645px;
+    margin: 10px 463px 0px 466px;
     position: absolute;
 }
-.course-body-border{
+.course-list{
     width: 1083px;
     height: 512px;
-    margin: 44px 178px 0px 179px;
+    margin: 44px 0px 0px 0px;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
 }
-.course-body{
+.course-item{
     width: 258px;
     height: 240px;
     border-radius: 5px;
@@ -209,18 +230,13 @@ nav a:first-child{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     margin: 0px 0px 16px 16px;
 }
-.course-body:nth-child(1){
+.course-item:nth-child(1){
     margin: 0px 0px 16px 0px;
 }
-.course-body:nth-child(5){
+.course-item:nth-child(5){
     margin: 0;
 }
-.course-body-hd{
-    width: 258px;
-    height: 139px;
-    position: relative;
-}
-.course-body-hd .flex-box{
+.course-cmpt{
     width: 42px;
     height: 20px;
     background: linear-gradient(180deg, #E5C676 0%, #E6A23C 100%);
@@ -228,7 +244,7 @@ nav a:first-child{
     margin: -3px 7px 123px 209px;
     padding: 0;
 }
-.course-body-hd .flex-box div{
+.course-cmpt div{
     width: 24px;
     height: 16px;
     font-size: 12px;
@@ -239,13 +255,18 @@ nav a:first-child{
     position: absolute;
     margin: 2px 9px;
 }
-.course-body-hd img{
+.course-item-hd{
+    width: 258px;
+    height: 139px;
+    position: relative;
+}
+.course-item-hd img{
     width: 258px;
     height: 139px;
     margin: 0;
     float: left;
 }
-.course-body-bd{
+.course-item-bd{
     width: 226px;
     height: 40px;
     font-size: 15px;
@@ -255,19 +276,19 @@ nav a:first-child{
     line-height: 22px;
     margin: 12px 16px 0px;
 }
-.course-body-ft{
+.course-item-ft{
     width: 258px;
     height: 48px;
     display: inline-block;
     position: relative;
 }
-.course-body-ft img{
+.course-item-ft img{
     width: 12px;
     height: 12px;
     background: #999999;
     position: absolute;
 }
-.course-body-ft div{
+.course-item-ft div{
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -276,26 +297,32 @@ nav a:first-child{
     position: absolute;
     margin: 19px 14px 17px 33px;
 }
-.course-body-ft img:nth-child(1){
+.course-item-ft img:nth-child(1){
     margin: 18px 0px 18px 16px;
 }
-.course-body-ft div:nth-child(2){
+.course-item-ft div:nth-child(2){
     margin: 19px 0px 17px 33px;
 }
-.course-body-ft img:nth-child(3){
+.course-item-ft img:nth-child(3){
     margin: 18px 0px 18px 72px;
 }
-.course-body-ft div:nth-child(4){
+.course-item-ft div:nth-child(4){
     margin: 19px 0px 17px 84px;
 }
-.course-body-ft img:nth-child(5){
+.course-item-ft img:nth-child(5){
     margin: 18px 0px 18px 200px;
 }
-.course-body-ft div:nth-child(6){
+.course-item-ft div:nth-child(6){
     margin: 19px 14px 17px 212px;
 }
 /* 项目挑战 */
-.project{
+.project-section{
+    width: 1080px;
+    height: 320px;
+    margin: 40px 178px 0px 182px;
+    position: relative;
+}
+.project-title{
     width: 80px;
     height: 20px;
     font-size: 20px;
@@ -303,10 +330,10 @@ nav a:first-child{
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 580px 678px 0px 682px;
+    margin: 0px 500px 0px;
     position: relative;
 }
-.project-header{
+.project-description{
     width: 140px;
     height: 14px;
     font-size: 14px;
@@ -314,18 +341,18 @@ nav a:first-child{
     font-weight: 500;
     color: #666666;
     line-height: 14px;;
-    margin: 10px 648px 0px 652px;
+    margin: 10px 470px 0px;
     position: absolute;
 }
-.project-body-border{
+.project-list{
     width: 1080px;
     height: 256px;
-    margin: 44px 178px 0px 182px;
+    margin: 44px 0px 0px;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
 }
-.project-body{
+.project-item{
     width: 203px;
     height: 120px;
     border-radius: 5px;
@@ -333,24 +360,24 @@ nav a:first-child{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     margin: 0px 16px 0px 0px;
 }
-.project-body:nth-child(5){
+.project-item:nth-child(5){
     margin: 0px 0px 0px 1px;
 }
-.project-body:nth-child(8){
+.project-item:nth-child(8){
     margin: 0px 0px 0px 1px;
 }
-.project-body:nth-child(n+6){
+.project-item:nth-child(n+6){
     margin: 16px 16px 0px 0px;
 }
-.project-body:last-child{
+.project-item:last-child{
     margin: 16px 0px 0px 1px;
 }
-.project-body-hd{
+.project-item-hd{
     width: 203px;
     height: 84px;
     position: relative;
 }
-.project-body-hd div{
+.project-item-hd div{
     width: 169px;
     height: 40px;
     font-size: 15px;
@@ -362,14 +389,14 @@ nav a:first-child{
     margin: 22px 18px 22px 16px;
     position: absolute;
 }
-.project-body-ft{
+.project-item-ft{
     width: 203px;
     height: 36px;
     background: #838CA1;
     border-radius: 0px 0px 5px 5px;
     position: relative;
 }
-.project-body-ft div{
+.project-item-ft div{
     width: 143px;
     height: 13px;
     font-size: 13px;
@@ -380,7 +407,7 @@ nav a:first-child{
     margin: 12px 30px 11px;
     position: absolute;
 }
-.project-body-ft .hidden{
+.project-item-ft .hidden{
     width: 52px;
     height: 13px;
     font-size: 13px;
@@ -392,26 +419,32 @@ nav a:first-child{
     position: absolute;
     display: none;
 }
-.project-body-ft:hover{
+.project-item-ft:hover{
     background: #006EDA;
 }
-.project-body-ft:hover div{
+.project-item-ft:hover div{
     display: none;
 }
-.project-body-ft:hover .hidden{
+.project-item-ft:hover .hidden{
     display: block;
 }
-.project-body:nth-child(2) .project-body-ft{
+.project-item:nth-child(2) .project-item-ft{
     background: #006EDA;
 }
-.project-body:nth-child(2) .project-body-ft div{
+.project-item:nth-child(2) .project-item-ft div{
     display: none;
 }
-.project-body:nth-child(2) .project-body-ft .hidden{
+.project-item:nth-child(2) .project-item-ft .hidden{
     display: block;
 }
 /* 实验 */
-.test{
+.test-section{
+    width: 1080px;
+    height: 503px;
+    margin: 40px 178px 0px 182px;
+    position: relative;
+}
+.test-title{
     width: 40px;
     height: 20px;
     font-size: 20px;
@@ -419,10 +452,10 @@ nav a:first-child{
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 340px 698px 0px 702px;
+    margin: 0px 520px 0px;
     position: relative;
 }
-.test-header{
+.test-description{
     width: 140px;
     height: 14px;
     font-size: 14px;
@@ -430,18 +463,18 @@ nav a:first-child{
     font-weight: 500;
     color: #666666;
     line-height: 14px;
-    margin: 10px 648px 0px 652px;
+    margin: 10px 470px 0px;
     position: absolute;
 }
-.test-body-border{
+.test-list{
     width: 1080px;
     height: 436px;
-    margin: 47px 178px 0px 182px;
+    margin: 47px 0px 0px;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
 }
-.test-body{
+.test-item{
     width: 203px;
     height: 210px;
     border-radius: 5px;
@@ -449,24 +482,19 @@ nav a:first-child{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     margin: 0px 16px 0px 0px;
 }
-.test-body:nth-child(5){
+.test-item:nth-child(5){
     margin: 0px 0px 0px 1px;
 }
-.test-body:nth-child(8){
+.test-item:nth-child(8){
     margin: 0px 0px 0px 1px;
 }
-.test-body:nth-child(n+6){
+.test-item:nth-child(n+6){
     margin: 16px 16px 0px 0px;
 }
-.test-body:last-child{
+.test-item:last-child{
     margin: 16px 0px 0px 1px;
 }
-.test-body-hd{
-    width: 203px;
-    height: 110px;
-    position: relative;
-}
-.test-body-hd .flex-box{
+.test-cmpt{
     width: 42px;
     height: 20px;
     background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
@@ -474,7 +502,7 @@ nav a:first-child{
     margin: -3px 10px 93px 151px;
     padding: 0;
 }
-.test-body-hd .flex-box div{
+.test-cmpt div{
     width: 24px;
     height: 16px;
     font-size: 12px;
@@ -485,13 +513,18 @@ nav a:first-child{
     position: absolute;
     margin: 2px 9px;
 }
-.test-body-hd img{
+.test-item-hd{
+    width: 203px;
+    height: 110px;
+    position: relative;
+}
+.test-item-hd img{
     width: 203px;
     height: 110px;
     margin: 0;
     float: left;
 }
-.test-body-bd{
+.test-item-bd{
     width: 169px;
     height: 40px;
     font-size: 15px;
@@ -501,19 +534,19 @@ nav a:first-child{
     line-height: 22px;
     margin: 12px 18px 0px 16px;
 }
-.test-body-ft{
+.test-item-ft{
     width: 203px;
     height: 48px;
     display: inline-block;
     position: relative;
 }
-.test-body-ft img{
+.test-item-ft img{
     width: 12px;
     height: 12px;
     background: #999999;
     position: absolute;
 }
-.test-body-ft div{
+.test-item-ft div{
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -521,22 +554,22 @@ nav a:first-child{
     line-height: 12px;
     position: absolute;
 }
-.test-body-ft img:nth-child(1){
+.test-item-ft img:nth-child(1){
     margin: 18px 0px 18px 16px;
 }
-.test-body-ft div:nth-child(2){
+.test-item-ft div:nth-child(2){
     margin: 19px 0px 17px 33px;
 }
-.test-body-ft img:nth-child(3){
+.test-item-ft img:nth-child(3){
     margin: 19px 0px 17px 81px;
 }
-.test-body-ft div:nth-child(4){
+.test-item-ft div:nth-child(4){
     margin: 19px 0px 17px 93px;
 }
-.test-body-ft img:nth-child(5){
+.test-item-ft img:nth-child(5){
     margin: 18px 0px 18px 149px;
 }
-.test-body-ft div:nth-child(6){
+.test-item-ft div:nth-child(6){
     margin: 19px 7px 17px 161px;
 }
 /* 脚部样式 */
@@ -544,7 +577,7 @@ nav a:first-child{
     width: 1440px;
     height: 40px;
     background: #333744;
-    margin: 523px 0px 0px;
+    margin: 40px 0px 0px;
 }
 .page-footer div{
     width: 1440px;
