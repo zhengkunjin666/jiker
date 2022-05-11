@@ -1,5 +1,5 @@
 /* 页面 */
-body{
+.index-page{
     width: 1440px;
     height: 2403px;
     background: #F8FAFC;
@@ -53,7 +53,7 @@ nav a:first-child{
     bottom: 13px;
     left: 270px;
 }
-.avaar{
+.avatar{
     width: 34px;
     height: 34px;
     background: #F7F7F7;
@@ -64,7 +64,7 @@ nav a:first-child{
     bottom: 13px;
     left: 1226px;
 }
-.avaar img{
+.avatar img{
     width: 34px;
     height: 34px;
     border-radius: 17px;
@@ -80,7 +80,7 @@ nav a:first-child{
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     margin: 20px 180px 0px;
 }
-.combatcamp{
+.camp{
     width: 60px;
     height: 20px;
     font-size: 20px;
@@ -90,7 +90,7 @@ nav a:first-child{
     line-height: 20px;
     margin: 40px 690px 0px;
 }
-.combatcamp-header{
+.camp-header{
     width: 154px;
     height: 14px;
     font-size: 14px;
@@ -100,28 +100,30 @@ nav a:first-child{
     line-height: 14px;
     margin: 10px 644px 0px 642px;
 }
-.combatcamp-body{
+.camp-body-border{
+    width: 1080px;
+    height: 316px;
+    margin: 20px 180px 0px;
+    position: relative;
+}
+.camp-body{
     width: 532px;
     height: 150px;
     background: #FFFFFF;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     border-radius: 5px;
-    position: relative;
-    float: left;
+    position: absolute;
 }
-.combatcamp-body.left-top{
-    margin: 20px 0px 0px 180px;
+.camp-body:nth-child(2){
+    margin: 0 0px 16px 548px;
 }
-.combatcamp-body.right-top{
-    margin: 20px 180px 0px 16px;
+.camp-body:nth-child(3){
+    margin: 166px 16px 0px 0px;
 }
-.combatcamp-body.left-bottom{
-    margin: 16px 0px 0px 180px;
+.camp-body:last-child{
+    margin: 166px 0px 0px 548px;
 }
-.combatcamp-body.right-bottom{
-    margin: 16px 180px 0px 16px;
-}
-.combatcamp-body-hd{
+.camp-body-hd{
     width: 240px;
     height: 20px;
     font-size: 20px;
@@ -132,7 +134,7 @@ nav a:first-child{
     margin: 28px 0px 0px 30px;
     position: absolute;
 }
-.combatcamp-body-bd{
+.camp-body-bd{
     width: 215px;
     height: 40px;
     font-size: 14px;
@@ -143,7 +145,7 @@ nav a:first-child{
     margin: 60px 0px 13px 30px;
     position: absolute;
 }
-.combatcamp-body-ft{
+.camp-body-ft{
     width: 139px;
     height: 12px;
     font-size: 12px;
@@ -154,10 +156,10 @@ nav a:first-child{
     margin: 113px 0px 25px 30px;
     position: absolute;
 }
-.combatcamp-body-ft span{
+.camp-body-ft span{
     color: #006EDA;
 }
-.combatcamp-body img{
+.camp-body img{
     width: 108px;
     height: 125px;
     display: inline-block;
@@ -174,7 +176,7 @@ nav a:first-child{
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 376px 698px 0px 702px;
+    margin: 40px 698px 0px 702px;
     position: relative;
 }
 .course-header{
@@ -201,25 +203,24 @@ nav a:first-child{
     height: 240px;
     border-radius: 5px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
-}
-.course-body.left{
-    margin: 0px 3px 13px 0px;
-}
-.course-body.right{
-    width: 258px;
-    height: 240px;
-    margin: 0px 0px 13px 16px;
     background-image: url(./img/index_course.png);
     background-repeat: no-repeat;
     background-size: 259px 238px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    margin: 0px 0px 16px 16px;
+}
+.course-body:nth-child(1){
+    margin: 0px 0px 16px 0px;
+}
+.course-body:nth-child(5){
+    margin: 0;
 }
 .course-body-hd{
     width: 258px;
     height: 139px;
     position: relative;
 }
-.course-body-hd .border{
+.course-body-hd .flex-box{
     width: 42px;
     height: 20px;
     background: linear-gradient(180deg, #E5C676 0%, #E6A23C 100%);
@@ -227,7 +228,7 @@ nav a:first-child{
     margin: -3px 7px 123px 209px;
     padding: 0;
 }
-.course-body-hd .border div{
+.course-body-hd .flex-box div{
     width: 24px;
     height: 16px;
     font-size: 12px;
@@ -258,50 +259,43 @@ nav a:first-child{
     width: 258px;
     height: 48px;
     display: inline-block;
+    position: relative;
 }
-.course-body-ft .left{
-    width: 0px;
-    height: 0px;
-}
-.course-body-ft .left img{
+.course-body-ft img{
     width: 12px;
     height: 12px;
     background: #999999;
-    margin: 18px 0px 18px 16px;
+    position: absolute;
 }
-.course-body-ft-right{
-    width: 211px;
-    height: 12px;
+.course-body-ft div{
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
+    position: absolute;
     margin: 19px 14px 17px 33px;
 }
-.course-body-ft-right .right{
-    width: 0px;
-    height: 0px;
+.course-body-ft img:nth-child(1){
+    margin: 18px 0px 18px 16px;
 }
-.course-body-ft-right div{
-    float: left;
+.course-body-ft div:nth-child(2){
+    margin: 19px 0px 17px 33px;
 }
-.course-body-ft-right div:last-child{
-    margin: 0px auto 0px 88px;
+.course-body-ft img:nth-child(3){
+    margin: 18px 0px 18px 72px;
 }
-.course-body-ft-right img{
-    width: 12px;
-    height: 12px;
-    background: #999999;
+.course-body-ft div:nth-child(4){
+    margin: 19px 0px 17px 84px;
 }
-.course-body-ft-right .middle img{
-    margin: -1px 0px 1px 15px;
+.course-body-ft img:nth-child(5){
+    margin: 18px 0px 18px 200px;
 }
-.course-body-ft-right .right img{
-    margin: -1px 46px 1px 77px;
+.course-body-ft div:nth-child(6){
+    margin: 19px 14px 17px 212px;
 }
 /* 项目挑战 */
-.projectchallenge{
+.project{
     width: 80px;
     height: 20px;
     font-size: 20px;
@@ -312,7 +306,7 @@ nav a:first-child{
     margin: 580px 678px 0px 682px;
     position: relative;
 }
-.projectchallenge-header{
+.project-header{
     width: 140px;
     height: 14px;
     font-size: 14px;
@@ -323,7 +317,7 @@ nav a:first-child{
     margin: 10px 648px 0px 652px;
     position: absolute;
 }
-.projectchallenge-body-border{
+.project-body-border{
     width: 1080px;
     height: 256px;
     margin: 44px 178px 0px 182px;
@@ -331,7 +325,7 @@ nav a:first-child{
     display: flex;
     flex-wrap: wrap;
 }
-.projectchallenge-body{
+.project-body{
     width: 203px;
     height: 120px;
     border-radius: 5px;
@@ -339,24 +333,24 @@ nav a:first-child{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     margin: 0px 16px 0px 0px;
 }
-.projectchallenge-body:nth-child(5){
+.project-body:nth-child(5){
     margin: 0px 0px 0px 1px;
 }
-.projectchallenge-body:nth-child(8){
+.project-body:nth-child(8){
     margin: 0px 0px 0px 1px;
 }
-.projectchallenge-body:nth-child(n+6){
+.project-body:nth-child(n+6){
     margin: 16px 16px 0px 0px;
 }
-.projectchallenge-body:last-child{
+.project-body:last-child{
     margin: 16px 0px 0px 1px;
 }
-.projectchallenge-body-hd{
+.project-body-hd{
     width: 203px;
     height: 84px;
     position: relative;
 }
-.projectchallenge-body-hd div{
+.project-body-hd div{
     width: 169px;
     height: 40px;
     font-size: 15px;
@@ -368,14 +362,14 @@ nav a:first-child{
     margin: 22px 18px 22px 16px;
     position: absolute;
 }
-.projectchallenge-body-ft{
+.project-body-ft{
     width: 203px;
     height: 36px;
     background: #838CA1;
     border-radius: 0px 0px 5px 5px;
     position: relative;
 }
-.projectchallenge-body-ft div{
+.project-body-ft div{
     width: 143px;
     height: 13px;
     font-size: 13px;
@@ -386,7 +380,7 @@ nav a:first-child{
     margin: 12px 30px 11px;
     position: absolute;
 }
-.projectchallenge-body-ft .hidden{
+.project-body-ft .hidden{
     width: 52px;
     height: 13px;
     font-size: 13px;
@@ -398,22 +392,22 @@ nav a:first-child{
     position: absolute;
     display: none;
 }
-.projectchallenge-body-ft:hover{
+.project-body-ft:hover{
     background: #006EDA;
 }
-.projectchallenge-body-ft:hover div{
+.project-body-ft:hover div{
     display: none;
 }
-.projectchallenge-body-ft:hover .hidden{
+.project-body-ft:hover .hidden{
     display: block;
 }
-.projectchallenge-body:nth-child(2) .projectchallenge-body-ft{
+.project-body:nth-child(2) .project-body-ft{
     background: #006EDA;
 }
-.projectchallenge-body:nth-child(2) .projectchallenge-body-ft div{
+.project-body:nth-child(2) .project-body-ft div{
     display: none;
 }
-.projectchallenge-body:nth-child(2) .projectchallenge-body-ft .hidden{
+.project-body:nth-child(2) .project-body-ft .hidden{
     display: block;
 }
 /* 实验 */
@@ -472,7 +466,7 @@ nav a:first-child{
     height: 110px;
     position: relative;
 }
-.test-body-hd .border{
+.test-body-hd .flex-box{
     width: 42px;
     height: 20px;
     background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
@@ -480,7 +474,7 @@ nav a:first-child{
     margin: -3px 10px 93px 151px;
     padding: 0;
 }
-.test-body-hd .border div{
+.test-body-hd .flex-box div{
     width: 24px;
     height: 16px;
     font-size: 12px;
@@ -513,46 +507,37 @@ nav a:first-child{
     display: inline-block;
     position: relative;
 }
-.test-body-ft .left{
-    width: 0px;
-    height: 0px;
-}
-.test-body-ft .left img{
+.test-body-ft img{
     width: 12px;
     height: 12px;
     background: #999999;
-    margin: 18px 0px 18px 16px;
+    position: absolute;
 }
-.test-body-ft-right{
-    width: 163px;
-    height: 12px;
+.test-body-ft div{
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    margin: 19px 7px 17px 33px;
-    position: relative;
-}
-.test-body-ft-right div{
     position: absolute;
 }
-.test-body-ft-right img{
-    width: 12px;
-    height: 12px;
-    background: #999999;
+.test-body-ft img:nth-child(1){
+    margin: 18px 0px 18px 16px;
 }
-.test-body-ft-right .middle img{
-    margin: 0px 103px 0px 48px;
+.test-body-ft div:nth-child(2){
+    margin: 19px 0px 17px 33px;
 }
-.test-body-ft-right .right img{
-    margin: -1px 35px 1px 116px;
+.test-body-ft img:nth-child(3){
+    margin: 19px 0px 17px 81px;
 }
-.test-body-ft-right div:nth-child(3){
-    margin: 0px 0px 0px 60px;
+.test-body-ft div:nth-child(4){
+    margin: 19px 0px 17px 93px;
 }
-.test-body-ft-right div:last-child{
-    margin: 0px 0px 0px 128px;
+.test-body-ft img:nth-child(5){
+    margin: 18px 0px 18px 149px;
+}
+.test-body-ft div:nth-child(6){
+    margin: 19px 7px 17px 161px;
 }
 /* 脚部样式 */
 .page-footer{
@@ -571,5 +556,4 @@ nav a:first-child{
     line-height: 40px;
     text-align: center;
 }
-
 
