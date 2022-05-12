@@ -100,6 +100,7 @@ nav a:first-child{
     line-height: 20px;
     margin: 0px 510px 0px;
     position: absolute;
+    white-space: nowrap;
 }
 .camp-description{
     width: 154px;
@@ -111,6 +112,7 @@ nav a:first-child{
     line-height: 14px;
     margin: 30px 464px 0px 462px;
     position: absolute;
+    white-space: nowrap;
 }
 .camp-list{
     width: 1080px;
@@ -148,6 +150,7 @@ nav a:first-child{
     line-height: 20px;
     margin: 28px 0px 0px 30px;
     position: absolute;
+    white-space: nowrap;
 }
 .camp-item-bd{
     width: 215px;
@@ -158,7 +161,7 @@ nav a:first-child{
     color: #666666;
     line-height: 20px;
     margin: 60px 0px 13px 30px;
-    position: absolute;
+    position: absolute
 }
 .camp-item-ft{
     width: 139px;
@@ -170,6 +173,7 @@ nav a:first-child{
     line-height: 12px;
     margin: 113px 0px 25px 30px;
     position: absolute;
+    white-space: nowrap;
 }
 .camp-item-ft span{
     color: #006EDA;
@@ -199,6 +203,7 @@ nav a:first-child{
     line-height: 20px;
     margin: 40px 620px 0px 523px;
     position: relative;
+    white-space: nowrap;
 }
 .course-description{
     width: 154px;
@@ -210,6 +215,7 @@ nav a:first-child{
     line-height: 14px;
     margin: 10px 463px 0px 466px;
     position: absolute;
+    white-space: nowrap;
 }
 .course-list{
     width: 1083px;
@@ -224,9 +230,6 @@ nav a:first-child{
     height: 240px;
     border-radius: 5px;
     background: #FFFFFF;
-    background-image: url(./img/index_course.png);
-    background-repeat: no-repeat;
-    background-size: 259px 238px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     margin: 0px 0px 16px 16px;
 }
@@ -236,24 +239,20 @@ nav a:first-child{
 .course-item:nth-child(5){
     margin: 0;
 }
-.course-cmpt{
+.course-item-tag{
     width: 42px;
     height: 20px;
-    background: linear-gradient(180deg, #E5C676 0%, #E6A23C 100%);
-    position: absolute;
-    margin: -3px 7px 123px 209px;
-    padding: 0;
-}
-.course-cmpt div{
-    width: 24px;
-    height: 16px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 16px;
+    line-height: 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #E5C676 0%, #E6A23C 100%);
     position: absolute;
-    margin: 2px 9px;
+    margin: -3px 7px 123px 209px;
+    padding: 0;
+    white-space: nowrap;
 }
 .course-item-hd{
     width: 258px;
@@ -263,6 +262,7 @@ nav a:first-child{
 .course-item-hd img{
     width: 258px;
     height: 139px;
+    border-radius: 5px;
     margin: 0;
     float: left;
 }
@@ -281,6 +281,7 @@ nav a:first-child{
     height: 48px;
     display: inline-block;
     position: relative;
+    white-space: nowrap;
 }
 .course-item-ft img{
     width: 12px;
@@ -295,9 +296,27 @@ nav a:first-child{
     color: #666666;
     line-height: 12px;
     position: absolute;
-    margin: 19px 14px 17px 33px;
+    margin: 19px 14px 17px 0px;
 }
 .course-item-ft img:nth-child(1){
+    margin: -1px 0px 1px 16px;
+}
+.course-item-ft span:nth-child(2){
+    margin: 0px 0px 0px 33px;
+}
+.course-item-ft img:nth-child(3){
+    margin: -1px 0px 1px 15px;
+}
+.course-item-ft span:nth-child(4){
+    margin: 0px 0px 0px 27px;
+}
+.course-item-ft img:nth-child(5){
+    margin: -1px 0px 1px 73px;
+}
+.course-item-ft span:nth-child(6){
+    margin: 0px 0px 0px 85px;
+}
+/* .course-item-ft img:nth-child(1){
     margin: 18px 0px 18px 16px;
 }
 .course-item-ft div:nth-child(2){
@@ -314,7 +333,7 @@ nav a:first-child{
 }
 .course-item-ft div:nth-child(6){
     margin: 19px 14px 17px 212px;
-}
+} */
 /* 项目挑战 */
 .project-section{
     width: 1080px;
@@ -332,6 +351,7 @@ nav a:first-child{
     line-height: 20px;
     margin: 0px 500px 0px;
     position: relative;
+    white-space: nowrap;
 }
 .project-description{
     width: 140px;
@@ -343,6 +363,7 @@ nav a:first-child{
     line-height: 14px;;
     margin: 10px 470px 0px;
     position: absolute;
+    white-space: nowrap;
 }
 .project-list{
     width: 1080px;
@@ -406,6 +427,7 @@ nav a:first-child{
     line-height: 13px;
     margin: 12px 30px 11px;
     position: absolute;
+    white-space: nowrap;
 }
 .project-item-ft .hidden{
     width: 52px;
@@ -418,6 +440,7 @@ nav a:first-child{
     margin: 12px 75px 11px 76px;
     position: absolute;
     display: none;
+    white-space: nowrap;
 }
 .project-item-ft:hover{
     background: #006EDA;
@@ -438,13 +461,13 @@ nav a:first-child{
     display: block;
 }
 /* 实验 */
-.test-section{
+.lab-section{
     width: 1080px;
     height: 503px;
     margin: 40px 178px 0px 182px;
     position: relative;
 }
-.test-title{
+.lab-title{
     width: 40px;
     height: 20px;
     font-size: 20px;
@@ -454,8 +477,9 @@ nav a:first-child{
     line-height: 20px;
     margin: 0px 520px 0px;
     position: relative;
+    white-space: nowrap;
 }
-.test-description{
+.lab-description{
     width: 140px;
     height: 14px;
     font-size: 14px;
@@ -465,8 +489,9 @@ nav a:first-child{
     line-height: 14px;
     margin: 10px 470px 0px;
     position: absolute;
+    white-space: nowrap;
 }
-.test-list{
+.lab-list{
     width: 1080px;
     height: 436px;
     margin: 47px 0px 0px;
@@ -474,7 +499,7 @@ nav a:first-child{
     display: flex;
     flex-wrap: wrap;
 }
-.test-item{
+.lab-item{
     width: 203px;
     height: 210px;
     border-radius: 5px;
@@ -482,49 +507,43 @@ nav a:first-child{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     margin: 0px 16px 0px 0px;
 }
-.test-item:nth-child(5){
+.lab-item:nth-child(5){
     margin: 0px 0px 0px 1px;
 }
-.test-item:nth-child(8){
+.lab-item:nth-child(8){
     margin: 0px 0px 0px 1px;
 }
-.test-item:nth-child(n+6){
+.lab-item:nth-child(n+6){
     margin: 16px 16px 0px 0px;
 }
-.test-item:last-child{
+.lab-item:last-child{
     margin: 16px 0px 0px 1px;
 }
-.test-cmpt{
+.lab-item-tag{
     width: 42px;
     height: 20px;
-    background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
-    position: absolute;
-    margin: -3px 10px 93px 151px;
-    padding: 0;
-}
-.test-cmpt div{
-    width: 24px;
-    height: 16px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 16px;
+    line-height: 20px;
+    background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
     position: absolute;
-    margin: 2px 9px;
+    margin: -3px 10px 93px 151px;
+    white-space: nowrap;
 }
-.test-item-hd{
+.lab-item-hd{
     width: 203px;
     height: 110px;
     position: relative;
 }
-.test-item-hd img{
+.lab-item-hd img{
     width: 203px;
     height: 110px;
     margin: 0;
     float: left;
 }
-.test-item-bd{
+.lab-item-bd{
     width: 169px;
     height: 40px;
     font-size: 15px;
@@ -534,59 +553,76 @@ nav a:first-child{
     line-height: 22px;
     margin: 12px 18px 0px 16px;
 }
-.test-item-ft{
+.lab-item-ft{
     width: 203px;
     height: 48px;
     display: inline-block;
     position: relative;
+    white-space: nowrap;
 }
-.test-item-ft img{
+.lab-item-ft img{
     width: 12px;
     height: 12px;
     background: #999999;
     position: absolute;
 }
-.test-item-ft div{
+.lab-item-ft div{
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
     position: absolute;
+    margin: 19px 7px 17px 0px;
 }
-.test-item-ft img:nth-child(1){
+.lab-item-ft img:nth-child(1){
+    margin: -1px 0px 1px 16px;
+}
+.lab-item-ft span:nth-child(2){
+    margin: 0px 0px 0px 33px;
+}
+.lab-item-ft img:nth-child(3){
+    margin: 0px 0px 0px 24px;
+}
+.lab-item-ft span:nth-child(4){
+    margin: 0px 0px 0px 36px;
+}
+.lab-item-ft img:nth-child(5){
+    margin: -1px 0px 1px 16px;
+}
+.lab-item-ft span:nth-child(6){
+    margin: 0px 0px 0px 28px;
+}
+/* .lab-item-ft img:nth-child(1){
     margin: 18px 0px 18px 16px;
 }
-.test-item-ft div:nth-child(2){
+.lab-item-ft div:nth-child(2){
     margin: 19px 0px 17px 33px;
 }
-.test-item-ft img:nth-child(3){
+.lab-item-ft img:nth-child(3){
     margin: 19px 0px 17px 81px;
 }
-.test-item-ft div:nth-child(4){
+.lab-item-ft div:nth-child(4){
     margin: 19px 0px 17px 93px;
 }
-.test-item-ft img:nth-child(5){
+.lab-item-ft img:nth-child(5){
     margin: 18px 0px 18px 149px;
 }
-.test-item-ft div:nth-child(6){
+.lab-item-ft div:nth-child(6){
     margin: 19px 7px 17px 161px;
-}
+} */
 /* 脚部样式 */
 .page-footer{
     width: 1440px;
     height: 40px;
     background: #333744;
-    margin: 40px 0px 0px;
-}
-.page-footer div{
-    width: 1440px;
-    height: 40px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
     line-height: 40px;
     text-align: center;
+    margin: 40px 0px 0px;
 }
+
 
