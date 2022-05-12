@@ -2,5 +2,46 @@
     padding: 0;
     margin: 0;
 }
-
+/* index和course的共同头部样式 */
+.page-header{
+    width: 1440px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.page-header img{
+    width: 56px;
+    height: 39px;
+    margin: 10px 1204px 11px 180px;
+}
+nav a{
+    padding: 0;
+    margin: 0 35px 0 0;
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 15px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+}
+.avatar{
+    width: 34px;
+    height: 34px;
+    background: #F7F7F7;
+    border-radius: 17px;
+    position: absolute;
+    top: 13px;
+    right: 180px;
+    bottom: 13px;
+    left: 1226px;
+}
+.avatar img{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    margin: 0;
+}
 
