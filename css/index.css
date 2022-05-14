@@ -289,19 +289,19 @@ nav a:first-child{
     white-space: nowrap;
 }
 .course-item-level{
-    background-image: url(./img/index_pic_level.jpg);
+    background-image: url(./../img/index_pic_level.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 15px 0px 17px;
 }
 .course-item-duration{
-    background-image: url(./img/index_pic_duration.jpg);
+    background-image: url(./../img/index_pic_duration.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 66px 0px 17px;
 }
 .course-item-people{
-    background-image: url(./img/index_pic_people.jpg);
+    background-image: url(./../img/index_pic_people.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 5px 0px 17px;
@@ -538,19 +538,19 @@ nav a:first-child{
     white-space: nowrap;
 }
 .lab-item-level{
-    background-image: url(./img/index_pic_level.jpg);
+    background-image: url(./../img/index_pic_level.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 15px 0px 17px;
 }
 .lab-item-duration{
-    background-image: url(./img/index_pic_duration.jpg);
+    background-image: url(./../img/index_pic_duration.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 21px 0px 17px;
 }
 .lab-item-people{
-    background-image: url(./img/index_pic_people.jpg);
+    background-image: url(./../img/index_pic_people.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 5px 0px 17px;

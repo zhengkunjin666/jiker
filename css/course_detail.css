@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* 页面样式 */
+.course-detail-page{
+    width: 1920px;
+    height: 1817px;
+    background: #F5F5F5;
+}
+/* 头部样式 */
+.page-header{
+    width: 1920px;
+    height: 66px;
+    background: #FFFFFF;
+    box-shadow: none;
+    position: relative;
+}
+.page-header img{
+    width: 63px;
+    height: 44px;
+    margin: 11px 1374px 11px 483px;
+}
+nav{
+    width: 80%;
+    height: 26px;
+    font-size: 0;
+    position: absolute;
+    right: 1001px;
+    bottom: 18.5px;
+    left: 619px;
+}
+nav a{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #3E3A3A;
+    line-height: 26px;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px 26px 0px 0px;
+}
+nav a:nth-child(3){
+    color: #4F6FDA;
+}
+nav a:nth-child(4){
+    margin: 0px 29px 0px 1px;
+}
+.horizontal{
+    width: 40px;
+    height: 6px;
+    background: #4F6FDA;
+    position: absolute;
+    top: 61px;
+    right: 1122px;
+    left: 759px;
+}
+/* 页面主体样式 */
+.page-body{
+    width: 1000px;
+    height: 1644px;
+    position: relative;
+}
+/* 页面上边栏样式 */
+.page-body-top-aside{
+    width: 1000px;
+    height: 344px;
+    margin: 29px 460px  0px 460px;
+    position: relative;
+}
+.top-aside-header{
+    width: 80%;
+    height: 16px;
+    font-size: 0px;
+    margin: 0px 507px 28px 0px;
+}
+.top-aside-header a{
+    width: auto;
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #466DE1;
+    line-height: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.top-aside-header a:nth-child(2n){
+    width: 9px;
+    height: 8px;
+    font-size: 16px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #707070;
+    margin-right: 11px;
+}
+.top-aside-header a:nth-child(4){
+    margin-right: 12px;
+}
+.top-aside-header a:last-child{
+    color: #707070;
+}
+.top-aside-body{
+    width: 1000px;
+    height: 300px;
+    background: #FFFFFF;
+    display: flex;
+}
+.top-aside-body img{
+    width: 400px;
+    height: 240px;
+    margin: 30px 0px 30px 30px;
+}
+.top-aside-body-title{
+    width: 393px;
+    height: 24px;
+    font-size: 24px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 23px;
+    position: absolute;
+    margin: 35px 156px 0px 451px;
+}
+.top-aside-body-desc{
+    width: 515px;
+    height: 48px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 24px;
+    position: absolute;
+    margin: 77px 35px 0px 450px;
+}
+.top-aside-body-ft{
+    width: 167px;
+    height: 74px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 14px;
+    position: absolute;
+    margin: 193px 383px 33px 450px;
+}
+.top-aside-body-ft div{
+    margin-bottom: 16px;
+}
+.top-aside-body-btn{
+    width: 180px;
+    height: 50px;
+    background: #466DE1;
+    position: absolute;
+    margin: 220px 30px 30px 790px;
+    white-space: nowrap;
+}
+.top-aside-body-btn a{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 13.5px 55px 13.5px 53px;
+}
+/* 主体部分 */
+.page-body-main{
+    width: 700px;
+    height: 1280px;
+    background: #FFFFFF;
+    margin: 20px 0px 0px 460px;
+    display: flex;
+    flex-direction: column;
+}
+.main-item{
+    width: 700px;
+    height: 388px;
+    margin-top: 32px;
+}
+.main-item:nth-child(n+2){
+    height: 383px;
+}
+.main-item:last-child{
+    margin-top: 35px;
+    margin-bottom: 27px;
+}
+.main-item .main-item-title{
+    width: 80%;
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 16px;
+    padding: 0px 0px 12px 30px;
+    margin: 0;
+}
+.main-item div{
+    width: 650px;
+    height: 40px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 40px;
+    padding-left: 50px;
+}
+.main-item:first-child div:nth-child(8){
+    background: #F6F8FD;
+}
+.main-item:nth-child(n+2) div:nth-child(2){
+    margin-top: 2.5px;
+}
+.main-item:nth-child(n+2) div:last-child{
+    margin-bottom: 2.5px;
+}
+.main-item:nth-child(n+2) div:nth-child(n+2){
+    height: 35px;
+    line-height: 35px;
+}
+.main-item img{
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin: 12px 50px;
+}
+.main-item:nth-child(n+2) img{
+    margin: 9.5px 50px;
+}
