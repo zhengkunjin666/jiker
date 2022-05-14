@@ -79,7 +79,7 @@ nav a:nth-child(3){
     display: flex;
 }
 /* 左边栏样式 */
-.page-body-left-aside{
+.page-body-aside{
     width: 250px;
     height: 1079px;
     background: #FFFFFF;
@@ -88,7 +88,7 @@ nav a:nth-child(3){
     display: flex;
     flex-direction: column;
 }
-.left-aside-catalog-dl{
+.catalog-dl{
     width: 228px;
     height: 68px;
     font-size: 14px;
@@ -99,10 +99,10 @@ nav a:nth-child(3){
     white-space: nowrap;
     margin: 40px 6px 0px 16px;
 }
-.left-aside-catalog-dl:first-child{
+.catalog-dl:first-child{
     margin: 24px 6px 0px 16px;
 }
-.left-aside-catalog-dt{
+.catalog-dt{
     width: auto;
     height: 16px;
     font-size: 16px;
@@ -112,35 +112,33 @@ nav a:nth-child(3){
     line-height: 16px;
     white-space: nowrap;
 }
-.left-aside-catalog-dd{
-    width: 228px;
+.catalog-dd{
+    width: 234px;
     height: 14px;
     margin: 14px 0px 0px 0px;
-    display: flex;
-    flex-wrap: nowrap;
 }
-.left-aside-catalog-dd:nth-child(3n){
+.catalog-dd:nth-child(3n){
     margin: 10px 0px 0px 0px;
 }
-.left-aside-catalog-dl:nth-child(3n) .left-aside-catalog-dd:nth-child(3n){
+.catalog-dl:nth-child(3n) .catalog-dd:nth-child(3n){
     margin: 8px 0px 0px 0px;
 }
-.left-aside-catalog-dd div{
+.catalog-dd span{
     width: auto;
     height: 14px;
     margin: 0px 20px 10px 0px;
-    white-space: nowrap;
+    float: left;
 }
-.left-aside-catalog-dd div:hover{
+.catalog-dd span:hover{
     color: #35B558;
 }
-.left-aside-catalog-dd .active{
+.catalog-dd .active{
     color: #35B558;
 }
-.left-aside-catalog-dd:nth-child(3n) div{
-    margin: 0px 20px 0px 0px;
+.catalog-dl:nth-child(3n) span:nth-child(4){
+    margin: -2px 60px 0px 0px;
 }
-.left-aside-catalog-dl:nth-child(3n) .left-aside-catalog-dd:nth-child(2n) div:nth-child(2){
+.catalog-dl:nth-child(3n) span:nth-child(2){
     margin: 0px 19px 0px 0px;
 }
 /* 主体样式 */
@@ -149,7 +147,7 @@ nav a:nth-child(3){
     height: 1079px;
     margin: 0px 0px 0px 24px;
 }
-.main-header{
+.course-section{
     width: 806px;
     height: 46px;
     background: #FFFFFF;
@@ -157,7 +155,7 @@ nav a:nth-child(3){
     border-radius: 3px;
     position: relative;
 }
-.main-header-title{
+.course-section-title{
     width: 34px;
     height: 14px;
     font-size: 14px;
@@ -168,7 +166,7 @@ nav a:nth-child(3){
     position: absolute;
     margin: 16px 0px 16px 20px;
 }
-.main-header-desc{
+.course-section-desc{
     width: 70%;
     height: 12px;
     font-size: 12px;
@@ -177,18 +175,18 @@ nav a:nth-child(3){
     color: #666666;
     line-height: 12px;
     position: absolute;
-    margin: 17px 0px 17px 83px;
+    margin: 17px 0px 17px 66px;
     padding-left: 16px;
     border-left: 1px solid #999999;
 }
-.main-header-ft{
+.course-section-ft{
     width: 128px;
     height: 12px;
     position: absolute;
     margin: 17px 30px 17px 648px;
     display: flex;
 }
-.main-header-ft div{
+.course-section-ft div{
     width: 30px;
     height: 12px;
     font-size: 12px;
@@ -198,10 +196,10 @@ nav a:nth-child(3){
     line-height: 12px;
     white-space: nowrap;
 }
-.main-header-ft div:first-child{
+.course-section-ft div:first-child{
     padding-right: 24px;
 }
-.main-header .btn{
+.course-section-ft .btn{
     content: '';
     width: 5.657px;
     height: 5.657px;
@@ -209,17 +207,17 @@ nav a:nth-child(3){
     border-right: 1px solid #666666;
     transform: rotate(135deg);
 }
-.main-header .btn:nth-child(2){
+.course-section-ft .btn:nth-child(2){
     margin-right: 30px;
 }
-.main-body{
+.course-list{
     width: 806px;
     height: 1017px;
     margin: 16px 0px 0px 0px;
     display: flex;
     flex-wrap: wrap;
 }
-.main-item{
+.course-item{
     width: 258px;
     height: 240px;
     border-radius: 5px;
@@ -227,10 +225,10 @@ nav a:nth-child(3){
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     margin: 0px 16px 19px 0px;
 }
-.main-item:nth-child(3n){
+.course-item:nth-child(3n){
     margin: 0px 0px 19px 0px;
 }
-.main-item-tag{
+.course-item-tag{
     width: 42px;
     height: 20px;
     font-size: 12px;
@@ -245,19 +243,19 @@ nav a:nth-child(3){
     padding: 0;
     white-space: nowrap;
 }
-.main-item-hd{
+.course-item-hd{
     width: 258px;
     height: 139px;
     position: relative;
 }
-.main-item-hd img{
+.course-item-hd img{
     width: 258px;
     height: 139px;
     border-radius: 5px;
     margin: 0;
     float: left;
 }
-.main-item-bd{
+.course-item-bd{
     width: 226px;
     height: 40px;
     font-size: 15px;
@@ -267,7 +265,7 @@ nav a:nth-child(3){
     line-height: 22px;
     margin: 13px 16px 0px;
 }
-.main-item-ft{
+.course-item-ft{
     width: 228px;
     height: 12px;
     font-size: 12px;
@@ -279,19 +277,19 @@ nav a:nth-child(3){
     padding: 19px 14px 17px 16px;
     white-space: nowrap;
 }
-.main-item-level{
+.course-item-level{
     background-image: url(./../img/index_pic_level.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 15px 0px 17px;
 }
-.main-item-duration{
+.course-item-duration{
     background-image: url(./../img/index_pic_duration.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding: 0px 69px 0px 17px;
 }
-.main-item-people{
+.course-item-people{
     background-image: url(./../img/index_pic_people.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
