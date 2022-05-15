@@ -8,7 +8,7 @@
     height: 1817px;
     background: #F5F5F5;
 }
-/* 头部样式 */
+/* 页面头部样式 */
 .page-header{
     width: 1920px;
     height: 66px;
@@ -59,22 +59,23 @@ nav a:nth-child(4){
 .page-body{
     width: 1000px;
     height: 1644px;
-    position: relative;
+    margin: 29px 460px 38px 460px;
+    float: left;
 }
-/* 页面上边栏样式 */
-.page-body-top-aside{
+/* 上边栏样式 */
+.page-body-aside{
     width: 1000px;
     height: 344px;
-    margin: 29px 460px  0px 460px;
+    float: left;
     position: relative;
 }
-.top-aside-header{
+.el-breadcrumb{
     width: 80%;
     height: 16px;
     font-size: 0px;
     margin: 0px 507px 28px 0px;
 }
-.top-aside-header a{
+.el-breadcrumb a{
     width: auto;
     height: 16px;
     font-size: 16px;
@@ -85,7 +86,7 @@ nav a:nth-child(4){
     text-decoration: none;
     margin-right: 10px;
 }
-.top-aside-header a:nth-child(2n){
+.el-breadcrumb a:nth-child(2n){
     width: 9px;
     height: 8px;
     font-size: 16px;
@@ -94,24 +95,24 @@ nav a:nth-child(4){
     color: #707070;
     margin-right: 11px;
 }
-.top-aside-header a:nth-child(4){
+.el-breadcrumb a:nth-child(4){
     margin-right: 12px;
 }
-.top-aside-header a:last-child{
+.el-breadcrumb a:last-child{
     color: #707070;
 }
-.top-aside-body{
+.course-desc{
     width: 1000px;
     height: 300px;
     background: #FFFFFF;
     display: flex;
 }
-.top-aside-body img{
+.course-desc img{
     width: 400px;
     height: 240px;
     margin: 30px 0px 30px 30px;
 }
-.top-aside-body-title{
+.course-desc-hd{
     width: 393px;
     height: 24px;
     font-size: 24px;
@@ -122,7 +123,7 @@ nav a:nth-child(4){
     position: absolute;
     margin: 35px 156px 0px 451px;
 }
-.top-aside-body-desc{
+.course-desc-bd{
     width: 515px;
     height: 48px;
     font-size: 16px;
@@ -133,7 +134,7 @@ nav a:nth-child(4){
     position: absolute;
     margin: 77px 35px 0px 450px;
 }
-.top-aside-body-ft{
+.course-desc-ft{
     width: 167px;
     height: 74px;
     font-size: 14px;
@@ -144,10 +145,10 @@ nav a:nth-child(4){
     position: absolute;
     margin: 193px 383px 33px 450px;
 }
-.top-aside-body-ft div{
+.course-desc-ft div{
     margin-bottom: 16px;
 }
-.top-aside-body-btn{
+.course-desc-btn{
     width: 180px;
     height: 50px;
     background: #466DE1;
@@ -155,7 +156,7 @@ nav a:nth-child(4){
     margin: 220px 30px 30px 790px;
     white-space: nowrap;
 }
-.top-aside-body-btn a{
+.course-desc a{
     font-size: 18px;
     font-family: PingFang SC;
     font-weight: 400;
@@ -164,28 +165,35 @@ nav a:nth-child(4){
     line-height: 50px;
     padding: 13.5px 55px 13.5px 53px;
 }
-/* 主体部分 */
+/* 主体样式 */
 .page-body-main{
+    width: 1000px;
+    height: 1280px;
+    margin: 20px 0px 0px 0px;
+    float: left;
+}
+/* 课程列表样式 */
+.course-list{
     width: 700px;
     height: 1280px;
     background: #FFFFFF;
-    margin: 20px 0px 0px 460px;
+    float: left;
     display: flex;
     flex-direction: column;
 }
-.main-item{
+.course-item{
     width: 700px;
     height: 388px;
     margin-top: 32px;
 }
-.main-item:nth-child(n+2){
+.course-item:nth-child(n+2){
     height: 383px;
 }
-.main-item:last-child{
+.course-item:last-child{
     margin-top: 35px;
     margin-bottom: 27px;
 }
-.main-item .main-item-title{
+.course-item .course-item-title{
     width: 80%;
     height: 16px;
     font-size: 16px;
@@ -196,7 +204,7 @@ nav a:nth-child(4){
     padding: 0px 0px 12px 30px;
     margin: 0;
 }
-.main-item div{
+.course-item div{
     width: 650px;
     height: 40px;
     font-size: 14px;
@@ -206,25 +214,143 @@ nav a:nth-child(4){
     line-height: 40px;
     padding-left: 50px;
 }
-.main-item:first-child div:nth-child(8){
+.course-item:first-child div:nth-child(8){
     background: #F6F8FD;
 }
-.main-item:nth-child(n+2) div:nth-child(2){
+.course-item:nth-child(n+2) div:nth-child(2){
     margin-top: 2.5px;
 }
-.main-item:nth-child(n+2) div:last-child{
+.course-item:nth-child(n+2) div:last-child{
     margin-bottom: 2.5px;
 }
-.main-item:nth-child(n+2) div:nth-child(n+2){
+.course-item:nth-child(n+2) div:nth-child(n+2){
     height: 35px;
     line-height: 35px;
 }
-.main-item img{
+.course-item img{
     width: 16px;
     height: 16px;
     float: right;
     margin: 12px 50px;
 }
-.main-item:nth-child(n+2) img{
+.course-item:nth-child(n+2) img{
     margin: 9.5px 50px;
+}
+/* 课程详情样式 */
+.course-detail{
+    width: 280px;
+    height: 440px;
+    background: #FFFFFF;
+    margin: 0px 0px 0px 20px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.course-detail-dl{
+    width: 217px;
+    height: 100px;
+    margin: 22px 33px 8px 30px;
+}
+.course-detail-dl:nth-child(3){
+    height: 16px;
+    font-size: 0px;
+}
+.course-detail-dl:nth-child(4){
+    height: 80px;
+    margin: 16px 33px 38px 30px;
+}
+.course-detail-dt{
+    width: auto;
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 16px;
+}
+.course-detail-dl:nth-child(3) .course-detail-dt{
+    width: 42px;
+    display: inline-block;
+}
+.course-detail-dd{
+    width: auto;
+    height: 74px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #727171;
+    line-height: 19px;
+    margin-top: 10px;
+}
+.course-detail-dl:nth-child(3) .course-detail-dd{
+    width: 50px;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 8px;
+    margin: 0px;
+    display: inline-block;
+}
+/* 相关课程样式 */
+.course-related{
+    width: 280px;
+    height: 380px;
+    background: #FFFFFF;
+    margin: 20px 0px 0px 20px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.course-related-title{
+    width: 65px;
+    height: 16px;
+    font-size: 16px;
+    font-family: SourceHanSansCN;
+    font-weight: bold;
+    color: #333333;
+    line-height: 16px;
+    margin: 22px 185px 0px 30px;
+}
+.course-related-dl{
+    width: 217px;
+    height: 60px;
+    margin: 12px 33px 8px 30px;
+    font-size: 0px;
+    position: relative;
+}
+.course-related-dl img{
+    width: 90px;
+    height: 60px;
+    position: absolute;
+}
+.course-related-dt{
+    width: 116px;
+    height: 31px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 16px;
+    position: absolute;
+    margin: 7px 0px 22px 101px;
+}
+.course-related-dt:nth-child(4){
+    font-family: SourceHanSansCN;
+}
+/* 脚部样式 */
+.page-footer{
+    width: 1920px;
+    height: 40px;
+    background: #333333;
+    font-size: 12px;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #666666;
+    line-height: 40px;
+    margin: 1711px 0px 0px 0px;
+}
+.page-footer span{
+    margin: 14px 485px 14px 460px;
+}
+.page-footer span:last-child{
+    margin: 14px 460px 14px 0px;
 }
