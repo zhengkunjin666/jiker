@@ -11,15 +11,16 @@
 <body>
     <div class="course-page">
         <div class="page-header">
-            <img src="./img/index_logo.jpg" alt="极客">
-            <nav>
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">实战营</a>
-                <a href="javascript:;">课程</a>
-                <a href="javascript:;">项目</a>
-            </nav>
-            <div class="horizontal"></div>
-            <div class="avatar"><img src="./img/index_avatar.jpg" alt="头像"></div>
+            <div class="page-header-box">
+                <img src="./img/index_logo.jpg" alt="极客" class="page-header-tag">
+                <nav>
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">实战营</a>
+                    <a href="javascript:;" class="page-header-active">课程</a>
+                    <a href="javascript:;">项目</a>
+                </nav>
+                <img src="./img/index_avatar.jpg" alt="头像" class="page-header-avatar">
+            </div>
         </div>
         <div class="page-body">
             <div class="page-body-aside">
@@ -85,20 +86,24 @@
                 </div>
             </div>
             <div class="page-body-main">
-                <div class=" course-filter">
+                <div class="course-filter">
                     <div class="course-filter-title">JAVA</div>
-                    <div class=" course-filter-desc">23门课程&nbsp;&nbsp;&nbsp;&nbsp;177课时&nbsp;&nbsp;&nbsp;&nbsp;1805小时</div>
-                    <div class=" course-filter-ft">
-                        <div>难度级别</div>
-                        <div class="btn"></div>
-                        <div>最新</div>
-                        <div class="btn"></div>
+                    <div class="course-filter-desc"><span>23门课程</span><span>177课时</span><span>1805小时</span></div>
+                    <div class="course-filter-bd">
+                        <div class="course-filter-box">难度级别
+                            <div class="course-filter-arrow"></div>
+                        </div>
+                        <div class="course-filter-box">最新
+                            <div class="course-filter-arrow"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="course-list">
                     <div class="course-item">
-                        <div class="course-item-tag">最新</div>
-                        <div class="course-item-hd"><img src="./img/index_course_new.jpg"></div>
+                        <div class="course-item-hd">
+                            <img src="./img/index_course_new.jpg">
+                            <div class="course-item-tag">最新</div>
+                        </div>
                         <div class="course-item-bd">只需10余分钟学会在AWS上启动堆栈堆栈堆栈堆栈堆栈</div>
                         <div class="course-item-ft">
                             <div class="course-item-level">中级</div>
@@ -125,8 +130,10 @@
                         </div>
                     </div>
                     <div class="course-item">
-                        <div class="course-item-tag">最新</div>
-                        <div class="course-item-hd"><img src="./img/index_course_new.jpg"></div>
+                        <div class="course-item-hd">
+                            <img src="./img/index_course_new.jpg">
+                            <div class="course-item-tag">最新</div>
+                        </div>
                         <div class="course-item-bd">只需10余分钟学会在AWS上启动堆栈堆栈堆栈堆栈堆栈</div>
                         <div class="course-item-ft">
                             <div class="course-item-level">中级</div>
@@ -153,8 +160,10 @@
                         </div>
                     </div>
                     <div class="course-item">
-                        <div class="course-item-tag">最新</div>
-                        <div class="course-item-hd"><img src="./img/index_course_new.jpg"></div>
+                        <div class="course-item-hd">
+                            <img src="./img/index_course_new.jpg">
+                            <div class="course-item-tag">最新</div>
+                        </div>
                         <div class="course-item-bd">只需10余分钟学会在AWS上启动堆栈堆栈堆栈堆栈堆栈</div>
                         <div class="course-item-ft">
                             <div class="course-item-level">中级</div>
@@ -181,8 +190,10 @@
                         </div>
                     </div>
                     <div class="course-item">
-                        <div class="course-item-tag">最新</div>
-                        <div class="course-item-hd"><img src="./img/index_course_new.jpg"></div>
+                        <div class="course-item-hd">
+                            <img src="./img/index_course_new.jpg">
+                            <div class="course-item-tag">最新</div>
+                        </div>
                         <div class="course-item-bd">只需10余分钟学会在AWS上启动堆栈堆栈堆栈堆栈堆栈</div>
                         <div class="course-item-ft">
                             <div class="course-item-level">中级</div>
@@ -209,29 +220,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="course-pagination">
+                    <a href="javascript:;" class="pagination-text pagination-front">首页</a>
+                    <a href="javascript:;" class="pagination-text pagination-upper">上一页</a>
+                    <a href="javascript:;" class="pagination-text pagination-button-active">1</a>
+                    <a href="javascript:;" class="pagination-text pagination-button">2</a>
+                    <a href="javascript:;" class="pagination-text pagination-button">3</a>
+                    <a href="javascript:;" class="pagination-text pagination-button">4</a>
+                    <a href="javascript:;" class="pagination-text pagination-button">5</a>
+                    <a href="javascript:;" class="pagination-text pagination-button">6</a>
+                    <a href="javascript:;" class="pagination-text pagination-button">7</a>
+                    <a href="javascript:;" class="pagination-text pagination-etc">···</a>
+                    <a href="javascript:;" class="pagination-text pagination-down">下一页</a>
+                    <a href="javascript:;" class="pagination-text pagination-last">末页</a>
+                    <span class="pagination-text pagination-total">共 7 页</span>
+                    <span class="pagination-text pagination-current">当前</span>
+                    <input type="text" value="1" class="pagination-text pagination-number">
+                    <span class="pagination-text pagination-pages">页</span> 
+                    <a href="javascript:;" class="pagination-text pagination-define">确定</a>
+                </div>
             </div>
         </div>
-        <div class="page-footer">
-            <div class="pagination">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="active">1</a>
-                <a href="javascript:;">2</a>
-                <a href="javascript:;">3</a>
-                <a href="javascript:;">4</a>
-                <a href="javascript:;">5</a>
-                <a href="javascript:;">6</a>
-                <a href="javascript:;">7</a>
-                <a href="javascript:;">···</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">末页</a>
-                <a href="javascript:;">共 7 页</a>
-                <a href="javascript:;">当前</a>
-                <a href="javascript:;">1</a>
-                <a href="javascript:;">页</a>
-                <a href="javascript:;">确定</a>
-            </div>
-        </div> 
     </div>
 </body>
 </html>

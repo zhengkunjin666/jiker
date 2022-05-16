@@ -2,10 +2,14 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background: #F8FAFC;
+} 
 /* 页面样式 */
 .course-detail-page{
     width: 1920px;
     height: 1817px;
+    margin: 0px auto;
     background: #F5F5F5;
 }
 /* 页面头部样式 */
@@ -40,20 +44,21 @@ nav a{
     padding: 0px;
     margin: 0px 26px 0px 0px;
 }
-nav a:nth-child(3){
+.page-header-active{
     color: #4F6FDA;
+    /* left: 0; */
+    position: relative;
 }
-nav a:nth-child(4){
-    margin: 0px 29px 0px 1px;
-}
-.horizontal{
+.page-header-active::after{
+    content: '';
     width: 40px;
     height: 6px;
     background: #4F6FDA;
     position: absolute;
-    top: 61px;
-    right: 1122px;
-    left: 759px;
+    margin: 40px 0px 0px -36px;
+}
+nav a:nth-child(4){
+    margin: 0px 29px 0px 1px;
 }
 /* 页面主体样式 */
 .page-body{
@@ -69,13 +74,14 @@ nav a:nth-child(4){
     float: left;
     position: relative;
 }
-.el-breadcrumb{
+/* 面包屑样式 */
+.breadcrumb{
     width: 80%;
     height: 16px;
     font-size: 0px;
     margin: 0px 507px 28px 0px;
 }
-.el-breadcrumb a{
+.breadcrumb a{
     width: auto;
     height: 16px;
     font-size: 16px;
@@ -86,7 +92,7 @@ nav a:nth-child(4){
     text-decoration: none;
     margin-right: 10px;
 }
-.el-breadcrumb a:nth-child(2n){
+.breadcrumb span{
     width: 9px;
     height: 8px;
     font-size: 16px;
@@ -95,10 +101,10 @@ nav a:nth-child(4){
     color: #707070;
     margin-right: 11px;
 }
-.el-breadcrumb a:nth-child(4){
+.breadcrumb span:nth-child(2){
     margin-right: 12px;
 }
-.el-breadcrumb a:last-child{
+.breadcrumb-nooperation{
     color: #707070;
 }
 .course-desc{

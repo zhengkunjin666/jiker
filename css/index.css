@@ -1,32 +1,39 @@
-/* 页面 */
+/* 页面样式 */
+/* *{
+    padding: 0px;
+    margin: 0px;
+} */
 .index-page{
-    width: 1440px;
-    height: 2403px;
+    width: 100%;
     background: #F8FAFC;
+    padding-top: 80px;
 }
-/* 头部样式 */
+/* 页面头部样式 */
 /* .page-header{
-    width: 1440px;
+    width: 100%;
     height: 60px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
-    position: relative;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 40;
 }
-.page-header img{
+.page-header-box{
+    width: 1080px;
+    height: 39px;
+    margin: 10px auto 11px auto;
+}
+.page-header-tag{
     width: 56px;
     height: 39px;
-    margin: 10px 1204px 11px 180px;
-} */
-nav{
-    width: 80%;
-    height: 15px;
-    position: absolute;
-    top: 21px;
-    right: 831px;
-    bottom: 24px;
-    left: 269px;
+    float: left;
 }
-/* nav a{
+nav{
+    float: left;
+    padding: 11px 0px 13px 33px;
+}
+nav a{
     padding: 0;
     margin: 0 35px 0 0;
     font-size: 15px;
@@ -35,47 +42,36 @@ nav{
     color: #333333;
     line-height: 15px;
     text-decoration: none;
-    display: inline-block;
     float: left;
-}  */
-nav a:first-child{
+} */
+.page-header-active{
     color: #006EDA;
-    left: 0;
+    /* left: 0;
+    position: relative; */
 }
-.horizontal{
-    width: 28px;
-    height: 3px;
+.page-header-active::after{
     background: #006EDA;
-    border-radius: 3px;
+    /* content: '';
+    width: 28px;
+    height: 3px; */
+    /* border-radius: 3px;
     position: absolute;
-    top: 44px;
-    right: 1142px;
-    bottom: 13px;
-    left: 270px;
+    margin: 23px 0px 13px -29px; */
 }
-/* .avatar{
+/* .page-header-avatar{
     width: 34px;
     height: 34px;
     background: #F7F7F7;
     border-radius: 17px;
-    position: absolute;
-    top: 13px;
-    right: 180px;
-    bottom: 13px;
-    left: 1226px;
-}
-.avatar img{
-    width: 34px;
-    height: 34px;
-    border-radius: 17px;
-    margin: 0;
+    float: right;
 } */
-/* 主体样式 */
-.page-body-hd{
+/* 页面主体样式 */
+.page-body{
     width: 1080px;
-    height: 320px;
-    margin: 20px 180px 0px;
+    margin: 0 auto;
 }
+/* 主体图片样式 */
+.page-body-hd{}
 .page-body-hd img{
     width: 1080px;
     height: 320px;
@@ -85,10 +81,8 @@ nav a:first-child{
 }
 /* 实战营 */
 .camp-section{
-    width: 1080px;
     height: 380px;
-    margin: 40px 180px 0px;
-    position: relative;
+    margin: 40px auto;
 }
 .camp-title{
     width: 60px;
@@ -239,6 +233,18 @@ nav a:first-child{
 .course-item:nth-child(5){
     margin: 0;
 }
+.course-item-hd{
+    width: 258px;
+    height: 139px;
+    position: relative;
+}
+.course-item-hd img{
+    width: 258px;
+    height: 139px;
+    border-radius: 5px;
+    margin: 0;
+    float: left;
+}
 .course-item-tag{
     width: 42px;
     height: 20px;
@@ -253,18 +259,6 @@ nav a:first-child{
     margin: -3px 7px 123px 209px;
     padding: 0;
     white-space: nowrap;
-}
-.course-item-hd{
-    width: 258px;
-    height: 139px;
-    position: relative;
-}
-.course-item-hd img{
-    width: 258px;
-    height: 139px;
-    border-radius: 5px;
-    margin: 0;
-    float: left;
 }
 .course-item-bd{
     width: 226px;
@@ -284,27 +278,32 @@ nav a:first-child{
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    display: flex;
-    padding: 19px 14px 17px 16px;
+    position: relative;
+    margin: 19px 14px 17px 16px;
     white-space: nowrap;
 }
 .course-item-level{
     background-image: url(./../img/index_pic_level.jpg);
     background-size: 12px 12px;
-    background-repeat: no-repeat;
-    padding: 0px 15px 0px 17px;
+    background-repeat: no-repeat;   
+    padding-left: 17px;
+    position: absolute;
 }
 .course-item-duration{
     background-image: url(./../img/index_pic_duration.jpg);
     background-size: 12px 12px;
-    background-repeat: no-repeat;
-    padding: 0px 66px 0px 17px;
+    background-repeat: no-repeat;   
+    padding-left: 17px;
+    position: absolute;
+    margin-left: 66px;
 }
 .course-item-people{
     background-image: url(./../img/index_pic_people.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    padding: 0px 5px 0px 17px;
+    padding-left: 17px;
+    position: absolute;
+    margin-left: 184px;
 }
 /* 项目挑战 */
 .project-section{
@@ -491,19 +490,6 @@ nav a:first-child{
 .lab-item:last-child{
     margin: 16px 0px 0px 1px;
 }
-.lab-item-tag{
-    width: 42px;
-    height: 20px;
-    font-size: 12px;
-    font-family: PingFangSC-Regular, PingFang SC;
-    font-weight: 400;
-    color: #FFFFFF;
-    line-height: 20px;
-    background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
-    position: absolute;
-    margin: -3px 10px 93px 151px;
-    white-space: nowrap;
-}
 .lab-item-hd{
     width: 203px;
     height: 110px;
@@ -514,6 +500,20 @@ nav a:first-child{
     height: 110px;
     margin: 0;
     float: left;
+}
+.lab-item-tag{
+    width: 42px;
+    height: 20px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
+    position: absolute;
+    margin: -3px 10px 93px 151px;
+    white-space: nowrap;
 }
 .lab-item-bd{
     width: 169px;
@@ -533,7 +533,7 @@ nav a:first-child{
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    display: flex;
+    position: relative;
     padding: 19px 7px 17px 16px;
     white-space: nowrap;
 }
@@ -541,19 +541,24 @@ nav a:first-child{
     background-image: url(./../img/index_pic_level.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    padding: 0px 15px 0px 17px;
+    position: absolute;   
+    padding-left: 17px;
 }
 .lab-item-duration{
     background-image: url(./../img/index_pic_duration.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    padding: 0px 21px 0px 17px;
+    position: absolute;   
+    padding-left: 17px;
+    margin-left: 65px;
 }
 .lab-item-people{
     background-image: url(./../img/index_pic_people.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    padding: 0px 5px 0px 17px;
+    position: absolute;   
+    padding-left: 17px;
+    margin-left: 133px;
 }
 /* 脚部样式 */
 .page-footer{
