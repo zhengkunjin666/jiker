@@ -14,7 +14,7 @@
     right: 0px;
     z-index: 40;
 }
-.page-header-box{
+.page-header-section{
     width: 1080px;
     height: 39px;
     margin: 10px auto 11px auto;
@@ -24,13 +24,13 @@
     height: 39px;
     float: left;
 }
-nav{
+.page-header-nav{
     float: left;
     padding: 11px 0px 13px 33px;
 }
-nav a{
-    padding: 0;
-    margin: 0 35px 0 0;
+.header-nav-item{
+    height: 15px;
+    margin-right: 35px;
     font-size: 15px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
@@ -39,11 +39,11 @@ nav a{
     text-decoration: none;
     float: left;
 }
-.page-header-active{
+.header-nav-item.active{
     left: 0;
     position: relative;
 }
-.page-header-active::after{
+.header-nav-item.active::after{
     content: '';
     width: 28px;
     height: 3px;

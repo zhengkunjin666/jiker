@@ -18,9 +18,8 @@
     top: 0px;
     right: 0px;
     z-index: 40;
-    margin
 }
-.page-header-box{
+.page-header-section{
     width: 1080px;
     height: 39px;
     margin: 10px auto 11px auto;
@@ -30,13 +29,13 @@
     height: 39px;
     float: left;
 }
-nav{
+.page-header-nav{
     float: left;
     padding: 11px 0px 13px 33px;
 }
-nav a{
-    padding: 0;
-    margin: 0 35px 0 0;
+.header-nav-item{
+    height: 15px;
+    margin-right: 35px;
     font-size: 15px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
@@ -45,12 +44,12 @@ nav a{
     text-decoration: none;
     float: left;
 } */
-.page-header-active{
+.header-nav-item.active{
     color: #35B558;
     /* left: 0;
     position: relative; */
 }
-.page-header-active::after{
+.header-nav-item.active::after{
     background: #35B558;
     /* content: '';
     width: 28px;
@@ -59,13 +58,13 @@ nav a{
     position: absolute;
     margin: 23px 0px 13px -29px; */
 }
-.page-header-avatar{
+/* .page-header-avatar{
     width: 34px;
     height: 34px;
     background: #F7F7F7;
     border-radius: 17px;
     float: right;
-}
+} */
 /* 页面主体样式 */
 .page-body{
     width: 1080px;
@@ -83,11 +82,6 @@ nav a{
 }
 .catalog-dl{
     height: 68px;
-    font-size: 14px;
-    font-family: PingFangSC-Regular, PingFang SC;
-    font-weight: 400;
-    color: #666666;
-    line-height: 14px;
     margin: 40px 6px 0px 16px;
 }
 .catalog-dl:first-child{
@@ -97,6 +91,7 @@ nav a{
     margin: 40px 6px 40px 16px;
 }
 .catalog-dt{
+    height: 16px;
     font-size: 16px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
@@ -105,41 +100,42 @@ nav a{
     cursor: pointer;
 }
 .catalog-dd{
+    height: 38px;
     margin-top: 14px;
-    cursor: pointer;
 }
-.catalog-dd:nth-child(3n){
-    margin-top: 10px;
-}
-.catalog-dl:nth-child(3n) .catalog-dd:nth-child(3n){
-    margin-top: 8px;
-}
-.catalog-dd span{
+.catalog-dl span{
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 14px;
     margin: 0px 20px 10px 0px;
     float: left;
+    cursor: pointer;
 }
-.catalog-dd span:hover{
+.catalog-dd-bd:hover{
     color: #35B558;
 }
-.catalog-dd .active{
+.catalog-dd .catalog-dd-bd-active{
     color: #35B558;
 }
-.catalog-dl:nth-child(1) span:nth-child(4n){
-    margin-bottom: 0px 0px 10px 0px;
-}
-.catalog-dl:nth-child(4) span:nth-child(4n){
+.catalog-dl:nth-child(1) .catalog-dd-bd:nth-child(4){
     margin: 0px 0px 10px 0px;
 }
-.catalog-dl:nth-child(3n) span:nth-child(4){
-    margin: -2px 60px 0px 0px;
+.catalog-dl:nth-child(4) .catalog-dd-bd:nth-child(4){
+    margin: 0px 0px 10px 0px;
 }
-.catalog-dl:nth-child(3n) span:nth-child(2){
+.catalog-dl:nth-child(3n) .catalog-dd-bd:nth-child(4){
+    margin-right: 60px;
+}
+.catalog-dl:nth-child(3n) .catalog-dd-bd:nth-child(2){
     margin: 0px 19px 0px 0px;
 }
 /* 主体样式 */
 .page-body-main{
     width: 806px;
-    margin: 0px 0px 0px 24px;
+    margin-left: 24px;
 }
 /* 课程筛选样式 */
 .course-filter{
@@ -149,6 +145,7 @@ nav a{
     border-radius: 3px;
 }
 .course-filter-title{
+    height: 14px;
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -158,17 +155,20 @@ nav a{
     margin: 16px 0px 16px 20px;
 }
 .course-filter-desc{
+    height: 12px;
+    font-size: 0px;
+    margin: 17px 0px 17px 12px;
+    padding-left: 16px;
+    border-left: 1px solid #999999;
+    float: left;
+}
+.course-filter-desc-text{
+    height: 12px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    float: left;
-    margin: 17px 0px 17px 12px;
-    padding-left: 16px;
-    border-left: 1px solid #999999;
-}
-.course-filter-desc span{
     margin-right: 16px;
 }
 .course-filter-bd{
@@ -179,17 +179,22 @@ nav a{
 .course-filter-box{
     width: 61px;
     height: 12px;
+    font-size: 0px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.course-filter-box:last-child{
+    width: 37px;
+    margin-right: 0px;
+}
+.course-filter-text{
+    height: 12px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    margin-right: 30px;
     display: inline-block;
-}
-.course-filter-box:last-child{
-    width: 37px;
-    margin-right: 0px;
 }
 .course-filter-arrow{
     content: '';
@@ -208,6 +213,7 @@ nav a{
 }
 .course-item{
     width: 258px;
+    height: 240px;
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
@@ -247,6 +253,7 @@ nav a{
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #333333;
+    line-height: 20px;
     padding: 13px 16px 0px;
 }
 /* position: absolute;

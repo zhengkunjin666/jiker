@@ -19,7 +19,7 @@
     right: 0px;
     z-index: 40;
 }
-.page-header-box{
+.page-header-section{
     width: 1080px;
     height: 39px;
     margin: 10px auto 11px auto;
@@ -29,13 +29,13 @@
     height: 39px;
     float: left;
 }
-nav{
+.page-header-nav{
     float: left;
     padding: 11px 0px 13px 33px;
 }
-nav a{
-    padding: 0;
-    margin: 0 35px 0 0;
+.header-nav-item{
+    height: 15px;
+    margin-right: 35px;
     font-size: 15px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
@@ -44,12 +44,12 @@ nav a{
     text-decoration: none;
     float: left;
 } */
-.page-header-active{
+.header-nav-item.active{
     color: #006EDA;
     /* left: 0;
     position: relative; */
 }
-.page-header-active::after{
+.header-nav-item.active::after{
     background: #006EDA;
     /* content: '';
     width: 28px;
@@ -70,72 +70,60 @@ nav a{
     width: 1080px;
     margin: 0 auto;
 }
-/* 主体图片样式 */
-.page-body-hd{}
-.page-body-hd img{
+/* 广告样式 */
+.banner-section{
+    font-size: 0px;
+}
+.banner-img{
     width: 1080px;
     height: 320px;
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
-/* 实战营 */
+/* 实战营样式 */
 .camp-section{
-    height: 380px;
-    margin: 40px auto;
+    margin: 40px auto 0px;
 }
 .camp-title{
-    width: 60px;
     height: 20px;
     font-size: 20px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 0px 510px 0px;
-    position: absolute;
-    white-space: nowrap;
+    text-align: center;
 }
 .camp-description{
-    width: 154px;
-    height: 14px;
+    height: 20px;
     font-size: 14px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #666666;
     line-height: 14px;
-    margin: 30px 464px 0px 462px;
-    position: absolute;
-    white-space: nowrap;
+    text-align: center;
+    margin-top: 10px;
 }
 .camp-list{
-    width: 1080px;
-    height: 380px;
-    margin: 40px 0px 0px;
-    position: relative;
+    font-size: 0px;
+    margin-top: 20px;
 }
 .camp-item{
     width: 532px;
-    height: 150px;
     background: #FFFFFF;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
     border-radius: 5px;
-    position: absolute;
+    display: inline-block;
+    margin: 0px 16px 16px 0px;
+    cursor: pointer;
 }
-.camp-item:nth-child(1){
-    margin: 64px 16px 16px 0px;
+.camp-item:nth-child(2n){
+    margin: 0px 0px 16px 0px;
 }
-.camp-item:nth-child(2){
-    margin: 64px 0px 16px 548px;
+.camp-item:nth-child(n+3){
+    margin-bottom: 0px;
 }
-.camp-item:nth-child(3){
-    margin: 230px 16px 0px 0px;
-}
-.camp-item:last-child{
-    margin: 230px 0px 0px 548px;
-}
-.camp-item-hd{
-    width: 240px;
+.camp-item-title{
     height: 20px;
     font-size: 20px;
     font-family: PingFangSC-Medium, PingFang SC;
@@ -143,79 +131,60 @@ nav a{
     color: #333333;
     line-height: 20px;
     margin: 28px 0px 0px 30px;
-    position: absolute;
-    white-space: nowrap;
 }
-.camp-item-bd{
-    width: 215px;
+.camp-item-desc{
     height: 40px;
+    width: 215px;
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 20px;
-    margin: 60px 0px 13px 30px;
-    position: absolute
+    margin: 12px 0px 0px 30px;
 }
 .camp-item-info{
-    width: 139px;
     height: 12px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    margin: 13px 0px 25px 0px;
-    position: absolute;
-    white-space: nowrap;
+    margin: 13px 0px 25px 30px;
 }
-.camp-item-info span{
+.camp-item-info .info-origin{
     color: #006EDA;
 }
-.camp-item-ft img{
+.camp-item-avatar{
     width: 108px;
     height: 125px;
-    display: inline-block;
-    float: left;
-    margin: 25px 49px 0px 379px;
-    position: absolute;
+    float: right;
+    margin: -125px 49px 0px 0px;
 }
-/* 课程 */
+/* 课程样式 */
 .course-section{
-    width: 1083px;
-    height: 560px;
-    margin: 40px 178px 0px 179px;
-    position: relative;
+    margin: 40px auto 0px;
 }
 .course-title{
-    width: 40px;
     height: 20px;
     font-size: 20px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 40px 620px 0px 523px;
-    position: relative;
-    white-space: nowrap;
+    text-align: center;
 }
 .course-description{
-    width: 154px;
     height: 14px;
     font-size: 14px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #666666;
     line-height: 14px;
-    margin: 10px 463px 0px 466px;
-    position: absolute;
-    white-space: nowrap;
+    text-align: center;
+    margin-top: 10px;
 }
 .course-list{
-    width: 1083px;
-    height: 512px;
-    margin: 44px 0px 0px 0px;
-    position: absolute;
+    margin: 20px auto 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -225,24 +194,27 @@ nav a{
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
-    margin: 0px 0px 16px 16px;
+    margin-right: 16px;
+    cursor: pointer;
 }
-.course-item:nth-child(1){
-    margin: 0px 0px 16px 0px;
+.course-item:nth-child(n+5){
+    margin: 16px 16px 0px 0px;
 }
-.course-item:nth-child(5){
-    margin: 0;
+.course-item:nth-child(4n){
+    margin: 0px;
+}
+.course-item:last-child{
+    margin: 16px 0px 0px 0px;
 }
 .course-item-hd{
-    width: 258px;
     height: 139px;
     position: relative;
 }
 .course-item-hd img{
     width: 258px;
     height: 139px;
-    border-radius: 5px;
-    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     float: left;
 }
 .course-item-tag{
@@ -257,106 +229,84 @@ nav a{
     background: linear-gradient(180deg, #E5C676 0%, #E6A23C 100%);
     position: absolute;
     margin: -3px 7px 123px 209px;
-    padding: 0;
-    white-space: nowrap;
 }
 .course-item-bd{
-    width: 226px;
     height: 40px;
     font-size: 15px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #333333;
-    line-height: 22px;
-    margin: 12px 16px 0px;
+    line-height: 20px;
+    padding: 12px 16px 0px;
 }
 .course-item-ft{
-    width: 228px;
     height: 12px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    position: relative;
-    margin: 19px 14px 17px 16px;
-    white-space: nowrap;
+    padding: 19px 14px 17px 16px;
 }
 .course-item-level{
     background-image: url(./../img/index_pic_level.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;   
     padding-left: 17px;
-    position: absolute;
+    float: left;
 }
 .course-item-duration{
     background-image: url(./../img/index_pic_duration.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;   
     padding-left: 17px;
-    position: absolute;
-    margin-left: 66px;
+    margin-left: 15px;
+    float: left;
 }
 .course-item-people{
     background-image: url(./../img/index_pic_people.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
     padding-left: 17px;
-    position: absolute;
-    margin-left: 184px;
+    float: right;
 }
-/* 项目挑战 */
+/* 项目挑战样式 */
 .project-section{
-    width: 1080px;
-    height: 320px;
-    margin: 40px 178px 0px 182px;
-    position: relative;
+    margin: 40px auto 0px;
 }
 .project-title{
-    width: 80px;
     height: 20px;
     font-size: 20px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 0px 500px 0px;
-    position: relative;
-    white-space: nowrap;
+    text-align: center;
 }
 .project-description{
-    width: 140px;
     height: 14px;
     font-size: 14px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #666666;
     line-height: 14px;;
-    margin: 10px 470px 0px;
-    position: absolute;
-    white-space: nowrap;
+    text-align: center;
+    margin-top: 10px;
 }
 .project-list{
-    width: 1080px;
-    height: 256px;
-    margin: 44px 0px 0px;
-    position: absolute;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
 }
 .project-item{
-    width: 203px;
-    height: 120px;
     border-radius: 5px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
-    margin: 0px 16px 0px 0px;
+    box-shadow: 0px 0px 5px 0px rgba(228, 191, 191, 0.04);
+    margin-right: 16px;
 }
-.project-item:nth-child(5){
-    margin: 0px 0px 0px 1px;
-}
-.project-item:nth-child(8){
-    margin: 0px 0px 0px 1px;
+.project-item:nth-child(5n){
+    margin-left: 1px;
+    margin-right: 0px;
 }
 .project-item:nth-child(n+6){
     margin: 16px 16px 0px 0px;
@@ -365,124 +315,100 @@ nav a{
     margin: 16px 0px 0px 1px;
 }
 .project-item-hd{
-    width: 203px;
     height: 84px;
-    position: relative;
 }
-.project-item-hd div{
+.project-item-hd-text{
+    height: 42px;
     width: 169px;
-    height: 40px;
     font-size: 15px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #333333;
-    line-height: 22px;
+    line-height: 21px;
     text-align: center;
-    margin: 22px 18px 22px 16px;
-    position: absolute;
+    padding: 22px 18px 22px 16px;
 }
 .project-item-ft{
-    width: 203px;
     height: 36px;
     background: #838CA1;
     border-radius: 0px 0px 5px 5px;
-    position: relative;
+    cursor: pointer;
 }
-.project-item-ft div{
-    width: 143px;
-    height: 13px;
+.project-item-ft-text{
+    height: 36px;
     font-size: 13px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 13px;
-    margin: 12px 30px 11px;
-    position: absolute;
-    white-space: nowrap;
+    line-height: 36px;
+    text-align: center;
 }
-.project-item-ft .hidden{
-    width: 52px;
-    height: 13px;
+.project-item-ft-hidden{
+    height: 36px;
     font-size: 13px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 13px;
-    margin: 12px 75px 11px 76px;
-    position: absolute;
+    line-height: 36px;
+    text-align: center;
     display: none;
-    white-space: nowrap;
 }
 .project-item-ft:hover{
     background: #006EDA;
 }
-.project-item-ft:hover div{
+.project-item-ft:hover .project-item-ft-text{
     display: none;
 }
-.project-item-ft:hover .hidden{
+.project-item-ft:hover .project-item-ft-hidden{
     display: block;
 }
 .project-item:nth-child(2) .project-item-ft{
     background: #006EDA;
 }
-.project-item:nth-child(2) .project-item-ft div{
+.project-item:nth-child(2) .project-item-ft-text{
     display: none;
 }
-.project-item:nth-child(2) .project-item-ft .hidden{
+.project-item:nth-child(2) .project-item-ft-hidden{
     display: block;
 }
-/* 实验 */
+/* 实验样式 */
 .lab-section{
-    width: 1080px;
-    height: 503px;
-    margin: 40px 178px 0px 182px;
-    position: relative;
+    margin: 40px auto 0;
 }
 .lab-title{
-    width: 40px;
     height: 20px;
     font-size: 20px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #333333;
     line-height: 20px;
-    margin: 0px 520px 0px;
-    position: relative;
-    white-space: nowrap;
+    text-align: center;
 }
 .lab-description{
-    width: 140px;
     height: 14px;
     font-size: 14px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #666666;
     line-height: 14px;
-    margin: 10px 470px 0px;
-    position: absolute;
-    white-space: nowrap;
+    text-align: center;
+    margin-top: 10px;
 }
 .lab-list{
-    width: 1080px;
-    height: 436px;
-    margin: 47px 0px 0px;
-    position: absolute;
+    margin-top: 23px;
     display: flex;
     flex-wrap: wrap;
 }
 .lab-item{
-    width: 203px;
-    height: 210px;
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
-    margin: 0px 16px 0px 0px;
+    margin-right: 16px;
+    cursor: pointer;
 }
-.lab-item:nth-child(5){
-    margin: 0px 0px 0px 1px;
-}
-.lab-item:nth-child(8){
-    margin: 0px 0px 0px 1px;
+.lab-item:nth-child(5n){
+    margin-left: 1px;
+    margin-right: 0px;
 }
 .lab-item:nth-child(n+6){
     margin: 16px 16px 0px 0px;
@@ -491,14 +417,12 @@ nav a{
     margin: 16px 0px 0px 1px;
 }
 .lab-item-hd{
-    width: 203px;
     height: 110px;
     position: relative;
 }
 .lab-item-hd img{
     width: 203px;
     height: 110px;
-    margin: 0;
     float: left;
 }
 .lab-item-tag{
@@ -513,7 +437,6 @@ nav a{
     background: linear-gradient(180deg, #2894FF 0%, #006EDA 100%);
     position: absolute;
     margin: -3px 10px 93px 151px;
-    white-space: nowrap;
 }
 .lab-item-bd{
     width: 169px;
@@ -523,46 +446,42 @@ nav a{
     font-weight: 400;
     color: #333333;
     line-height: 22px;
-    margin: 12px 18px 0px 16px;
+    padding: 12px 18px 0px 16px;
 }
 .lab-item-ft{
-    width: 180px;
     height: 12px;
     font-size: 12px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #666666;
     line-height: 12px;
-    position: relative;
     padding: 19px 7px 17px 16px;
-    white-space: nowrap;
 }
 .lab-item-level{
     background-image: url(./../img/index_pic_level.jpg);
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    position: absolute;   
     padding-left: 17px;
+    float: left;
 }
 .lab-item-duration{
     background-image: url(./../img/index_pic_duration.jpg);
     background-size: 12px 12px;
-    background-repeat: no-repeat;
-    position: absolute;   
+    background-repeat: no-repeat;  
     padding-left: 17px;
-    margin-left: 65px;
+    margin-left: 24px;
+    float: left;
 }
 .lab-item-people{
     background-image: url(./../img/index_pic_people.jpg);
     background-size: 12px 12px;
-    background-repeat: no-repeat;
-    position: absolute;   
+    background-repeat: no-repeat;  
     padding-left: 17px;
-    margin-left: 133px;
+    float: right;
 }
 /* 脚部样式 */
 .page-footer{
-    width: 1440px;
+    width: 100%;
     height: 40px;
     background: #333744;
     font-size: 12px;
